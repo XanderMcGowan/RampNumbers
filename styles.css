@@ -43,8 +43,9 @@ h1 {
   width: 10vw;
 }
 
-#view {
-  width: 8vw;
+#reset{
+  width: 6vw;
+  height: 5vh;
 }
 
 button {
