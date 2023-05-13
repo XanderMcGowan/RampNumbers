@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+    <title>Ramp Numbers</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>ramp numbers</h1>
+      <div class="results" id="results">
+        A ramp number is a number whose digits from left to right either strictly
+        rise or stay the same. 
+        <br>
+        <br>
+        EXAMPLE: 1234, 1124, and 13569 are all ramp numbers.
+        <br>
+        EXAMPLE: 1032 and 1528 are not ramp numbers.
+        <br>
+        <br>
+        ENTER NUMBER BELOW TO SEE HOW MANY RAMP NUMBERS ARE LESS IN VALUE THAN YOUR INPUT
+      </div>
+    </div>
+    <div class="elements">
+      <input
+        type="number"
+        id="num"
+        min="1"
+        max="99999"
+        placeholder="enter number here"
+      />
+      <button onclick="getNum()">submit</button>
+      <button onclick="location.reload()">view instructions</button>
+    </div>
+  </body>
+</html>

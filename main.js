@@ -1,6 +1,17 @@
 let rampNumCount = 0
 let rampNumbers = []
 
+const getNum = () => {
+  rampNumCount = 0
+  let num = document.getElementById('num').value
+    if (num.length > 5) {
+      document.getElementById("results").innerHTML = "number must be lower then 99999"
+      return
+    }
+
+    numOfRampsBelow(num)
+}
+
  const numOfRampsBelow = (num) => {
    
     for (let i = 1; i < num; i++){
@@ -44,8 +55,6 @@ let rampNumbers = []
 
       
     }
-   console.log(`${rampNumCount} total ramp numbers are less than ${num}`)
+    document.getElementById("results").innerHTML = `${rampNumCount} total ramp numbers are less than ${num}`
   }
 
-numOfRampsBelow(250)
-console.log(rampNumbers)
